@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estudiante</title>
+    <meta name="description" content="está es una página web de estudiante">
+    <meta name="author" content="Universidad Central del Ecuador">
+    <meta name="keywords" content="Inversiones, plazo fijo, cuentas, ahorros, corriente, prestamos">
+
+    <link rel="stylesheet" href="../css/externos.css">
+</head>
+
+<body>
+    <header></header>
+
+    <nav></nav>
+
+    <section>
+        <!---->
+        <form action="https://api.gob.ec/insertarCliente" method="POST">
+            <label id="id_nombre" for="id_nombre_input">Nombre:</label>
+            <input id="id_nombre_input" type="text">
+
+            <label id="id_apellido" for="id_apellido_input">Apellido:</label>
+            <input id="id_apellido_input" type="text">
+
+            <label id="id_nacimiento" for="id_nacimiento_input">Fecha de nacimiento:</label>
+            <input id="id_nacimiento_input"type="date">
+
+            <label id="id_contasenia" for="id_contrasenia_input">Contraseña:</label>
+            <input id="id_contrasenia_input" type="password">
+
+            <label id="id_mensaje" for="id_mensaje_input">Mensaje:</label>
+            <textarea name="id_mensaje_input" id="id_mensaje_input"></textarea>
+
+            <button>Guardar</button>
+        </form>
+    </section>
+    <footer></footer>
+</body>
+</html>
