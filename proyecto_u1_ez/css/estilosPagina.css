@@ -1,0 +1,29 @@
+h1{
+    font-size: 20x;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font: 12px sans-serif;
+}
+
+/*solo se renderizan los elementos principales con display*/
+header, section, footer, nav, aside, article{
+    display: block; /*permite manipular los elementos*/
+}
+
+body{
+    text-align: center;
+    background-color: #fefae0;
+}
+
+.cabecera{
+    background: #dda15e;
+    border: 1px solid #14213d;
+    padding: 20px;
+}
+
+/*anidación de estilos para hijos*/
+.cabecera h1{
+    text-align: left;
+}

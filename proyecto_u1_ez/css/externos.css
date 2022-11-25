@@ -1,14 +1,36 @@
+/*selector por elemento*/
 h1{
     color: #1d3557; 
     background-color: #a8dadc;
 }
-
+/*selector por identificador*/
 #id_titulo{
     color: #457b9d; 
     background-color: #f1faee;
 }
 
+/*selector por clase*/
 .clase_titulos{
     color: black; 
     background-color: #e63946;
+}
+
+/*selector por atributo*/
+img[src*="jpg"]{
+    width: 306px;
+    height: 306px;
+}
+
+/*selector por evento*/
+label:hover{
+    color: #457b9d;
+}
+
+label:active{
+    color: #1d3557;
+}
+
+/*selector universal*/
+*{
+    background-color: #c5e3e4;
 }
