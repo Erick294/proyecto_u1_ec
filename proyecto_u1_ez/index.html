@@ -7,6 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../proyecto_u1_ez/css/externos.css">
     <title>Mi primera página</title>
+
+    <!--CSS interno-->
+    <style>
+        h4{
+            color: brown;
+        }
+
+        img[src*="webp"]{
+            width: 306px;
+            height: 306px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +26,9 @@
         <h2 id="id_titulo">Mi primera pagina web 2</h2>
         <h3 class="clase_titulos">Mi primera pagina web 3</h3>
         <h6 class="clase_titulos">Mi primera pagina web 6</h6>
+        <label for="">Evento pseudoclase</label>
+        <h4>CSS Interno</h4>
+        <h5 style="color:deeppink; font-size:large; font-family:'Times New Roman', Times, serif">CSS Online</h5>
     </header>
 
     <nav>
@@ -29,6 +44,7 @@
     <section>
         <article>
             <p>Lorep ipsum dolor sit anet</p>
+            <img src="../proyecto_u1_ez/img/demon.jpg" alt="No encontrado">
             <footer>Likes (28)</footer>
         </article>
 
@@ -37,13 +53,20 @@
                 penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus nec eros condimentum, aliquet tellus nec, posuere 
                 urna. Pellentesque porttitor risus et diam luctus, pellentesque suscipit ipsum malesuada. Nulla a diam eu odio ultricies cursus 
                 vel eget nisi. Maecenas hendrerit est id semper ultricies. Pellentesque fringilla nulla enim, ac condimentum tellus fringilla ac.</p>
+                <img src="../proyecto_u1_ez/img/demon2.webp" alt="No encontrado">
                 <footer>Likes (28)</footer>
         </article>
     </section>
 
     <!--Contenido alternativo o referencial a mi pagina-->
     <aside>
-        <blockquote cite="https://www.elcomercio.com/"></blockquote>
+        <blockquote cite="https://www.elcomercio.com/">
+            Referencia relacionada
+        </blockquote>
     </aside>
+
+    <footer>
+        Derechos reservados
+    </footer>
 </body>
 </html>
