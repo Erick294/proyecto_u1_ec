@@ -27,3 +27,60 @@ body{
 .cabecera h1{
     text-align: left;
 }
+
+.menu li{
+    list-style: none;
+    display: inline-block; /*mostrar en horizontal*/
+    border: 1px solid #14213d;
+    padding: 5px;
+    margin: 5px
+}
+
+.menu{
+    background-color: darkkhaki;
+    border: 1px solid #14213d;
+    text-align: left;
+}
+
+.formulario{
+    width: 900px;
+    background-color: #fffcee;
+    border: 1px double #14213d;
+    margin: 25px auto;
+}
+
+.seccion{
+    margin: 20px;
+    height: 500px;
+    float: left;
+}
+
+.referencias{
+    width: 200px;
+    margin: 20px;
+    border: 1px solid #14213d;
+    float: left; /*se ordena despues del componente principal (sale del elemento/queda flotando)*/
+}
+
+article{
+    border: 1px solid #14213d;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: burlywood;
+}
+
+article footer{
+    text-align: right;
+    font-style: oblique;
+}
+
+.pie{
+    clear: both; /*pase lo que passe mantiene su posicion*/
+    font-size: 12px;
+}
+
+img{
+    width: 240px;
+    display: block;
+    margin: 20px auto;
+}
