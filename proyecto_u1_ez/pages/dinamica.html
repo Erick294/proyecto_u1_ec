@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosPagina.css">
+
+    <!--Js externo-->
+    <script src="../js/funciones.js"></script>
+    
+    <!-- JS interno-->
+    <script>
+        function cambiarColor(){
+            document.getElementById('elemento1').style.background='blue'
+        }
+
+        function cambiarColor2(color){
+            document.getElementById('elemento1').style.background=color
+        }
+        
+        /*
+        function sumar(num1, num2){
+            return num1+num2
+        }
+
+        function resta(){
+            return document.getElementById('numero1').value - document.getElementById('numero2').value 
+        }*/
+    </script>
+
+    <title>Primer JavaScript</title>
+</head>
+<body>
+   <header></header>
+   <nav></nav>
+   <section>
+        <label id="elemento1" for="">Texto 1</label>
+        <label id="elemento2" for="">Texto 2</label>
+        <img id="imagen1" src="../img/demon.jpg" alt="No existe la imagen">
+
+        <input id="numero1" type="number" placeholder="Primer numero">
+        <input id="numero2" type="number" placeholder="Segundo numero">
+
+        <label id="resultado" for="">Resultado</label>
+
+        <!--Uso de Js externo-->
+        <button onclick="document.getElementById('resultado').innerText=sumar(parseInt(document.getElementById('numero1').value), parseInt(document.getElementById('numero2').value))">Sumar</button>
+        <button onclick="document.getElementById('resultado').innerText=restar(document.getElementById('numero1').value, document.getElementById('numero2').value)">Restar</button>
+        <button onclick="document.getElementById('resultado').innerText=dividir(document.getElementById('numero1').value, document.getElementById('numero2').value)">Dividir</button>
+        <button onclick="document.getElementById('resultado').innerText=multiplicar(document.getElementById('numero1').value, document.getElementById('numero2').value)">Multiplicar</button>
+
+        <!--uso de js interno-->
+        <button onclick="cambiarColor()">Cambiar color azul</button>
+        <button onclick="cambiarColor2('red')">Cambiar color</button>
+        <button onclick="alert(sumar(5, 8))">Sumar</button>
+        <button onclick="alert(resta())">Restar</button>
+        
+
+        <!--uso de js en línea-->
+        <button onclick="document.getElementById('elemento1').innerHTML='Modificaste el texto'">Cambiar texto</button>
+        <button onclick="document.getElementById('imagen1').src='../img/demon2.webp'">Cambiar imagen</button>
+        <input id="pas1" type="password">
+        <button onclick="alert(document.getElementById('pas1').value)">Mostrar</button>
+        
+   </section> 
+</body>
+</html>
