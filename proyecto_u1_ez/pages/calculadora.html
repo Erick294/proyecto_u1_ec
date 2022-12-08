@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/funciones.js"></script>
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Calculadora</h1>
+        <h4>Toque las posiciones de los números para cambiarlos</h4>
+    </header>
+
+    <div class="contenedor">
+        <div class="digitos">
+            <button onclick="document.getElementById(getVerificar()).innerText='1'">1</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='2'">2</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='3'">3</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='4'">4</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='5'">5</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='6'">6</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='7'">7</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='8'">8</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='9'">9</button>
+            <button onclick="document.getElementById(getVerificar()).innerText='0'">0</button>
+        </div>
+
+        <div class="panelResultados">
+            <label onclick="verificarPosicion1()" id="primero" for="">0</label>
+            <label id="signo" for="">-</label>
+            <label onclick="verificarPosicion2()" id="segundo" for="">0</label>
+            <label for="">=</label>
+            <label id="resultado" for="">0</label>
+        </div>
+
+        <div class="botones">
+            <button onclick="document.getElementById('signo').innerText='+'; document.getElementById('resultado').innerText= sumar()">Sumar</button>
+            <button onclick="document.getElementById('signo').innerText='-'; document.getElementById('resultado').innerText= restar()">Restar</button>
+            <button onclick="document.getElementById('signo').innerText='*'; document.getElementById('resultado').innerText= multiplicar()">Multiplicar</button>
+            <button onclick="document.getElementById('signo').innerText='/'; document.getElementById('resultado').innerText= dividir2()">Dividir</button>
+            <button onclick="resetear()">Resetear</button>
+        </div>
+    </div>
+</body>
+</html>
