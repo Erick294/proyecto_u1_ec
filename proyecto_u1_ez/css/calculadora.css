@@ -1,0 +1,42 @@
+body{
+    display:grid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #8ECAE6;
+}
+
+.digitos{
+    display:block;
+    width:215px;
+}
+
+.contenedor{
+    display:flex;
+    width:1175px;
+}
+
+.digitos button{
+    height: 65px;
+    width: 65px;
+    background-color: #219EBC;
+}
+
+.panelResultados{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 25px;
+}
+
+.panelResultados label{
+    font-size: 35px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.botones button{
+    background-color: #FFB703;
+    width: fit-content;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 25%;
+}
