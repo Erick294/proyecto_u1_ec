@@ -1,16 +1,20 @@
-var verificar
+let verificar
+let resultado
 
 function sumar(){
-    var suma =  parseInt(document.getElementById('primero').value) + parseInt(document.getElementById('segundo').value)
-    return suma
+    resultado =  parseInt(document.getElementById('primero').value) + parseInt(document.getElementById('segundo').value)
+    console.log(resultado)
+    return resultado
 }
 
 function restar(){
-    return document.getElementById('primero').value - document.getElementById('segundo').value
+    resultado = document.getElementById('primero').value - document.getElementById('segundo').value
+    return resultado
 }
 
 function multiplicar(){
-    return document.getElementById('primero').value * document.getElementById('segundo').value
+    resultado = document.getElementById('primero').value * document.getElementById('segundo').value
+    return resultado
 }
 
 function dividir(){
